@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  @apply bg-cream text-navy;
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Utility: shared polaroid frame used across screens */
+.polaroid-frame {
+  @apply bg-white p-2 pb-6 shadow-polaroid rounded-sm;
+}
+
+/* Utility: soft focus ring for accessibility, kept subtle to match the theme */
+:focus-visible {
+  outline: 2px solid theme('colors.wax');
+  outline-offset: 3px;
+}
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
