@@ -75,12 +75,12 @@ const clientConfig = {
   // 5. SCREEN 3 — LETTER PAGE
   // ---------------------------------------------------------------
   letter: {
-    heading: 'Happy Birthday, Love!',
+    heading: 'Happy Birthday, MyyLove!',
     salutation: 'Happy Birthday to my soulmate, my best friend, and the most important person in my world! ❤️',
     paragraphs: [
       'I’ve been thinking about what to write to you, but honestly, words will never be enough to describe how much you truly mean to me. I just want to take today to remind you of how deeply I love you and how grateful I am to have you in my life❤️🌎',
       'Thank you for being my safe space. From day one, you’ve shown me what real love, security, and care look like. The way you embrace me in every mood, protect my peace, and love me so unconditionally is something I will never take for granted. You always know how to calm my mind, understand me without me even speaking, and make every heavy day feel light just by being there❣️❣️❣️',
-      'Thank you for all the effort you put into us, for paying attention to the smallest details, and for always making sure I feel safe, cherished, and valued. You are not just my boyfriend—you are my home, my anchor, and my biggest source of strength😍',
+      'Thank you for all the effort you put into us, for paying attention to the smallest details, and for always making sure I feel safe, cherished, and valued. You are not just my girlfriend—you are my home, my anchor, and my biggest source of strength😍',
       'On your special day, I wish you all the happiness, success, and peace that your heart can hold. You deserve the absolute best that this life has to offer, and I promise to always be by your side, supporting you, loving you, and celebrating you through every step of the journey.👩‍❤️‍💋‍👨',
     ],
     signOff: 'Happy Birthday, my love. I love you more than words could ever say 🫂🫂🫂🥺',
@@ -95,77 +95,96 @@ const clientConfig = {
   // ---------------------------------------------------------------
   // 5.5 SCREEN 3.5 — QUIZ PAGE (8 Questions)
   // ---------------------------------------------------------------
-  quiz: {
-    heading: 'A Little Quiz for You',
-    subtitle: 'Answer these 8 questions from the heart! ✨',
-    screenshotNotice: '📸 Take a screenshot of your answers and send them to me! 💌',
-    submitLabel: 'Submit Answers ✨',
-    editLabel: 'Edit Answers ✏️',
-    continueLabel: 'Continue to Next Screen 🎵',
-    backLabel: 'Back',
-    questions: [
-      {
-        id: 1,
-        question: 'If we were in the Marvel universe, what superhero power would you want me to have?',
-        type: 'text',
-        placeholder: 'Type your answer here...',
-      },
-      {
-        id: 2,
-        question: 'If you had to order my exact favorite comfort food right now without asking me, what would you get?',
-        type: 'text',
-        placeholder: 'Type your answer here...',
-      },
-      {
-        id: 3,
-        question: "What’s your favorite memory of us together so far?",
-        type: 'text',
-        placeholder: 'Type your answer here...',
-      },
-      {
-        id: 4,
-        question: 'If we were in the Marvel universe, what superhero power would you want me to have?',
-        type: 'choice',
-        options: ['ME', 'SUPER GIRL'],
-      },
-      {
-        id: 5,
-        question: 'If you had to order my exact favorite comfort food right now without asking me, what would you get?',
-        type: 'choice',
-        options: ['Sushi', 'Mac'],
-      },
-      {
-        id: 6,
-        question: "What’s your favorite memory of us together so far?",
-        type: 'text',
-        placeholder: 'Type your answer here...',
-      },
-      {
-        id: 7,
-        question: "When you think about the future, what's something you really look forward to doing together?",
-        type: 'choice',
-        options: ['my future plan every thing with you', 'married me'],
-      },
-      {
-        id: 8,
-        question: "What's a song or a movie that always reminds you of me when you hear or see it?",
-        type: 'text',
-        placeholder: 'Type your answer here...',
-      },
-    ],
-  },
+ 
+quiz: {
+  heading: 'A Little Quiz for You ❤️',
+  subtitle: 'Answer these 8 questions from your heart, my love! ✨',
+  screenshotNotice: '📸 Take a screenshot of your answers and send them to me! 💌',
+  submitLabel: 'Submit Answers ✨',
+  editLabel: 'Edit Answers ✏️',
+  continueLabel: 'Continue to Next Screen 🎵',
+  backLabel: 'Back',
+
+  questions: [
+    {
+      id: 1,
+      question: 'If we were in the Marvel universe, what superpower would you want me to have?',
+      type: 'text',
+      placeholder: 'Tell me, baby... 🦸',
+    },
+    {
+      id: 2,
+      question: 'If you had to order my favourite comfort food without asking me, what would you get?',
+      type: 'text',
+      placeholder: 'You should know this one! 🤭',
+    },
+    {
+      id: 3,
+      question: 'What is your favourite memory of us together so far?',
+      type: 'text',
+      placeholder: 'Tell me our special moment... 🥹',
+    },
+    {
+      id: 4,
+      question: 'If you could choose one superpower for me, what would it be?',
+      type: 'choice',
+      options: [
+        'Read your mind ❤️',
+        'Teleport to you whenever I miss you 🫂',
+        'Stop time during our moments ⏳',
+        'Super strength to protect you 🦸',
+      ],
+    },
+    {
+      id: 5,
+      question: 'What would you choose for our perfect date?',
+      type: 'choice',
+      options: [
+        'Movie date & cuddles 🍿',
+        'Long bike ride together 🏍️',
+        'Romantic dinner date 🌹',
+        'A whole day just for us ❤️',
+      ],
+    },
+    {
+      id: 6,
+      question: 'What is one little thing I do that makes you fall for me even more?',
+      type: 'text',
+      placeholder: 'I wanna know, pilla... 🥺',
+    },
+    {
+      id: 7,
+      question: 'When you imagine our future, what are you most excited about?',
+      type: 'choice',
+      options: [
+        'Marrying you and calling you mine forever 💍',
+        'Building our dream life together 🏡',
+        'Travelling the world together ✈️',
+        'Growing old together ♾️',
+      ],
+    },
+    {
+      id: 8,
+      question: 'What is one song or movie that will always remind you of me?',
+      type: 'text',
+      placeholder: 'Our special song or movie... 🎶',
+    },
+  ],
+},
+
 
   // ---------------------------------------------------------------
   // 6. SCREEN 4 — VIDEO PAGE
   // ---------------------------------------------------------------
-  video: {
-    heading: 'Song For You',
-    // Accepts a full YouTube watch/share URL OR a bare 11-char video ID.
-    youtubeId: 'https://youtu.be/fOir_5j2NaE?si=6Bpb-kZYrEZoT-op',
-    caption: 'love you — our song',
-    backLabel: 'Back',
-    nextLabel: 'Next',
-  },
+
+video: {
+  heading: 'Song For You ❤️',
+  youtubeId: 'https://www.youtube.com/watch?v=LPeZOE8ZIHI',
+  caption: 'Inkem Inkem Inkem Kaavaale… ❤️🥹 — our forever song',
+  backLabel: 'Back',
+  nextLabel: 'Next',
+},
+
 
   // ---------------------------------------------------------------
   // 7. SCREEN 5 — PHOTO COLLAGE (15 photos in a heart-shaped grid)
